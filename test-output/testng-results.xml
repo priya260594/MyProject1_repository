@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="5" total="7" passed="0" failed="0" skipped="2">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[----Connection to database established---]]>
@@ -7,248 +7,77 @@
     <line>
       <![CDATA[chrome Browser is launched]]>
     </line>
+    <line>
+      <![CDATA[-----Login successfull-----]]>
+    </line>
+    <line>
+      <![CDATA[-----Logout successfull-----]]>
+    </line>
+    <line>
+      <![CDATA[----browser closed successfull------]]>
+    </line>
+    <line>
+      <![CDATA[========Connection to database is closed======]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-09-16T20:43:00 IST" name="Suite" finished-at="2022-09-16T20:43:11 IST" duration-ms="10722">
+  <suite started-at="2022-09-16T22:53:48 IST" name="Default suite" finished-at="2022-09-16T22:54:22 IST" duration-ms="34347">
     <groups>
       <group name="RegressionSuite">
-        <method signature="CreateContactWithOrg4Test.contactWithOrgTest()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" name="contactWithOrgTest" class="vTiger.ContactTests.CreateContactWithOrg4Test"/>
-        <method signature="CreateOrgWithElectronicInvestor4Test.orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@62150f9e]" name="orgWithElectronicInvestorTest" class="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test"/>
+        <method signature="CreateOrgWithElectronicInvestor4Test.orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" name="orgWithElectronicInvestorTest" class="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test"/>
       </group> <!-- RegressionSuite -->
       <group name="SmokeSuite">
-        <method signature="CreateOrgWithElectronicInvestor4Test.orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@62150f9e]" name="orgWithElectronicInvestorTest" class="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test"/>
+        <method signature="CreateOrgWithElectronicInvestor4Test.orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" name="orgWithElectronicInvestorTest" class="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test"/>
       </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2022-09-16T20:43:00 IST" name="Test" finished-at="2022-09-16T20:43:11 IST" duration-ms="10722">
-      <class name="vTiger.ContactTests.CreateContactWithOrg4Test">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:00 IST" name="bsConfig" finished-at="2022-09-16T20:43:00 IST" duration-ms="33" status="PASS">
+    <test started-at="2022-09-16T22:53:48 IST" name="Default test" finished-at="2022-09-16T22:54:22 IST" duration-ms="34347">
+      <class name="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:53:48 IST" name="bsConfig" finished-at="2022-09-16T22:53:48 IST" duration-ms="14" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[----Connection to database established---]]>
             </line>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:01 IST" name="bcConfig" finished-at="2022-09-16T20:43:10 IST" duration-ms="9025" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at vTiger.GenericUtility.BaseClass.bcConfig(BaseClass.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:53:49 IST" name="bcConfig" finished-at="2022-09-16T22:53:53 IST" duration-ms="4760" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[chrome Browser is launched]]>
             </line>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:11 IST" name="bmConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341191154" status="SKIP">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:53:53 IST" name="bmConfig" finished-at="2022-09-16T22:53:58 IST" duration-ms="4407" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[-----Login successfull-----]]>
+            </line>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="contactWithOrgTest()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:11 IST" name="contactWithOrgTest" finished-at="2022-09-16T20:43:11 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at vTiger.GenericUtility.BaseClass.bcConfig(BaseClass.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactWithOrgTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:11 IST" name="amConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341191222" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:11 IST" name="acConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341191296" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.ContactTests.CreateContactWithOrg4Test@61862a7f]" started-at="2022-09-16T20:43:13 IST" name="asConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341193493" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- asConfig -->
-      </class> <!-- vTiger.ContactTests.CreateContactWithOrg4Test -->
-      <class name="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test">
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@62150f9e]" started-at="2022-09-16T20:43:11 IST" name="bmConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341191262" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@62150f9e]" started-at="2022-09-16T20:43:11 IST" name="orgWithElectronicInvestorTest" finished-at="2022-09-16T20:43:11 IST" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=105.0.5195.102)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'DESKTOP-BO9JQS5', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.4.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: C:\Users\HP\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56365}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5c4fa68f06eb607b71e94ad189ac26ef
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at vTiger.GenericUtility.BaseClass.bcConfig(BaseClass.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="orgWithElectronicInvestorTest()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:53:58 IST" name="orgWithElectronicInvestorTest" finished-at="2022-09-16T22:54:18 IST" duration-ms="20699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orgWithElectronicInvestorTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@62150f9e]" started-at="2022-09-16T20:43:11 IST" name="amConfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1663341191286" status="SKIP">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:54:18 IST" name="amConfig" finished-at="2022-09-16T22:54:22 IST" duration-ms="3462" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[-----Logout successfull-----]]>
+            </line>
           </reporter-output>
         </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:54:22 IST" name="acConfig" finished-at="2022-09-16T22:54:22 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----browser closed successfull------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test@1afd44cb]" started-at="2022-09-16T22:54:23 IST" name="asConfig" finished-at="2022-09-16T22:54:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[========Connection to database is closed======]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- asConfig -->
       </class> <!-- vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -43,8 +43,8 @@ public class BaseClass {
 		Reporter.log("----Connection to database established---", true);
 	}
 // @Parameters("BROWSER") //only for cross browser platform
-	@BeforeTest(groups= {"RegressionSuite","SmokeSuite"})
-//   @BeforeClass(groups={"RegressionSuite","SmokeSuite"})
+	//	@BeforeTest(groups= {"RegressionSuite","SmokeSuite"})
+   @BeforeClass(groups={"RegressionSuite","SmokeSuite"})
 	public void bcConfig(/*String BROWSER*/) throws IOException {
 	String BROWSER=pUtil.readDataFromPropertyFile("browser");
 		String URL=pUtil.readDataFromPropertyFile("url");
@@ -86,8 +86,8 @@ driver.get(URL);
 	
 	
 	}
-	@AfterTest(groups= {"RegressionSuite","SmokeSuite"})
-		//@AfterClass
+	//	@AfterTest(groups= {"RegressionSuite","SmokeSuite"})
+		@AfterClass(groups= {"RegressionSuite","SmokeSuite"})
 	public void acConfig() {
 		driver.close();
 		Reporter.log("----browser closed successfull------", true);
