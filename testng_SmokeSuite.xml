@@ -6,9 +6,9 @@
 <include name="SmokeSuite"> </include>
 </run>
 </groups>
-  <test thread-count="5" name="Test">
+  <test thread-count="1" name="Test">
     <classes>
-     
+     <class name="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test"/>
       <class name="vTiger.OrgranisationTests.CreateOrgWithHealthcare4Test"/>
     </classes>
   </test> <!-- Test -->

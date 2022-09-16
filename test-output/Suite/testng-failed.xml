@@ -2,18 +2,34 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="RegressionSuite"/>
+      </run>
+    </groups>
     <classes>
-      <class name="vTiger.OrgranisationTests.CreateOrgWithHealthcare4Test">
+      <class name="vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test">
         <methods>
+          <include name="orgWithElectronicInvestorTest"/>
           <include name="asConfig"/>
           <include name="bmConfig"/>
-          <include name="orgWithHealthcareTest"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
           <include name="bsConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- vTiger.OrgranisationTests.CreateOrgWithHealthcare4Test -->
+      </class> <!-- vTiger.OrgranisationTests.CreateOrgWithElectronicInvestor4Test -->
+      <class name="vTiger.ContactTests.CreateContactWithOrg4Test">
+        <methods>
+          <include name="asConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="bsConfig"/>
+          <include name="contactWithOrgTest"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- vTiger.ContactTests.CreateContactWithOrg4Test -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -21,7 +21,7 @@ import vTiger.ObjectRepository.OrganisationPage;
 public class CreateOrgWithHealthcare4Test extends BaseClass {
 
 		
-	@Test(groups="SmokeSuite")
+	@Test(groups={"RegressionSuite","SmokeSuite"})
 	public void orgWithHealthcareTest() throws EncryptedDocumentException, InvalidFormatException, IOException{
 		
 		

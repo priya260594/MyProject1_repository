@@ -1,10 +1,10 @@
-package vTiger.TestNGPractice;
+package vTiger.practice;
 
 import org.testng.annotations.Test;
 
-public class TestNGPractice1 {
+public class TestAnnotationPractice1Test {
 
-	@Test
+@Test
 	
 	public void testNGPractice1() {
 		System.out.println("Test 1");

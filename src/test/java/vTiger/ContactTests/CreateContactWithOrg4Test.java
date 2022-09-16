@@ -26,7 +26,7 @@ import vTiger.ObjectRepository.OrganisationPage;
 public class CreateContactWithOrg4Test extends BaseClass{
 
 	
-	@Test(groups="SmokeSuite")
+	@Test(groups="RegressionSuite")
 	public void contactWithOrgTest() throws EncryptedDocumentException, InvalidFormatException, IOException {
 		
 		
