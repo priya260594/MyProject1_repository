@@ -13,6 +13,8 @@
   
   <dependencies>
 
+
+
 <!--This is for automation -->
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
@@ -63,7 +65,8 @@
 
 <!--This is for unit test Framework-->
 <!--https://mvnrepository.com/artifact/org.testng/testng --> 
-<dependency> <groupId>org.testng</groupId> 
+<dependency> 
+<groupId>org.testng</groupId> 
 <artifactId>testng</artifactId> 
 <version>7.4.0</version>
 

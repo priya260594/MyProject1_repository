@@ -6,7 +6,9 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.mysql.jdbc.Driver;
+import com.mysql.cj.jdbc.Driver;
+
+
 
 /**
  * This class contains all the generic methods related to database

@@ -94,7 +94,7 @@ public class ListenerImplementation implements ITestListener {
 		/*Configure the extend report*/                            
 	ExtentSparkReporter htmlReport=new ExtentSparkReporter(".\\ExtentReports\\Reports-"+new JavaUtility().getSystemdateInFormat()+".exe");	
 	htmlReport.config().setDocumentTitle("WASM-5 VTiger execution report");
-	htmlReport.config().setTheme(Theme.DARK);
+	htmlReport.config().setTheme(Theme.DARK); 
 	htmlReport.config().setReportName("vTiger execution report");
 	
 	report=new ExtentReports();

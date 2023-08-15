@@ -27,8 +27,8 @@ public class SampleJDBCExecuteQuery {
 		      ResultSet result = state.executeQuery("select * from student;");
 		      
 		      while(result.next()) {
-		          System.out.println(result.getString(1)); 
-		    	  // System.out.println(result.getString(1)+"  "+result.getString(2)+"  "+result.getString(3)+"  "+result.getString(4));
+//		          System.out.println(result.getString(1)); 
+		    	   System.out.println(result.getString(1)+"  "+result.getString(2)+"  "+result.getString(3)+"  "+result.getString(4));
 		      }
 		      
 		    } catch (Exception e) {
